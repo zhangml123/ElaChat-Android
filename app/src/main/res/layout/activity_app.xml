@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentcontactxml"
+    android:background="#e6e6e6"
+    android:textAlignment="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/dappswebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ProgressBar
+            android:id="@+id/dappsprogressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:max="100"
+            android:progress="0"
+            android:indeterminateTint="#07500c"
+            android:visibility="gone"/>
+    </FrameLayout>
+</RelativeLayout>

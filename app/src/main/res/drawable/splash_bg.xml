@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!--默认缩放-->
+    <item
+        android:left="0dp"
+        android:top="0dp">
+        <color android:color="#0070C9" />
+    </item>
+    <item
+        android:gravity="center"
+        android:top="0dp"
+        android:width="300dp"
+        android:height="450dp"
+        >
+        <bitmap android:src="@drawable/ela_background"/>
+    </item>
+
+
+
+</layer-list>

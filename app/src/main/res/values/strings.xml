@@ -1,0 +1,5 @@
+<resources>
+    <string name="upgrade_confirm">Upgrade</string>
+    <string name="upgrade_cancel">Next time</string>
+    <string name="message">信息</string>
+</resources>

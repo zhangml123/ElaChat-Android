@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eladapp.elachat"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Allows unlocking your device and activating its screen so UI tests can succeed -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ela_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ela_icon"
+        android:supportsRtl="true"
+        android:name="com.eladapp.elachat.application.ElachatApp"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.eladapp.elachat.chat.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ElachatActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.ChatActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.AddFriendsActivity">
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation">
+        </activity>
+
+        <activity android:name="com.eladapp.elachat.wallet.WalletActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.WalletcreateonestepActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.WalletcreatetowstepActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.WalletImportActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.FriendlistActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.MyInfoActivity"
+           >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.NewFriendsActivity"
+            >
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.SetmyinfoActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.UserInfoActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.ImgActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.AudioRecorderActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.VideoRecorderActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.PlayvideoActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetmenurActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetdetailActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetpayActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetsendActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetsendconfirmActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AssetchatsendconfirmActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AppsettingActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.CommonsettingActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AssetsettingActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AsseteditpaypwdActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AssetDeletWalletActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.did.DidmanageActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.MessagesettingActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.LicenseagreementActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AssetOutPutPrivateKeyActivity">
+        </activity>
+
+        <activity android:name="com.eladapp.elachat.JavaActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.did.DidAuthorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="elachatapp"
+                    android:host="identity">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AssetoutputprvstoreActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AssetoutputmnemonicActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.dapps.DappActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="elachatapp"
+                    android:host="dapps">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eladapp.elachat.wallet.AuthorpayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:scheme="elachatapp"
+                    android:host="walletpay">
+                </data>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eladapp.elachat.dapps.DappmainActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.AdddappinfoActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.mysetting.DappcateinfoActivity">
+        </activity>
+        <activity android:name="com.eladapp.elachat.chat.ChatmenurActivity"  />
+    </application>
+
+</manifest>
